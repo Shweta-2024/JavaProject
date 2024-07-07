@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             if(userID.isEmpty()){
                 return;
             }
-            //start the service
+
             startService(userID);
             Intent intent = new Intent(MainActivity.this,CallActivity.class);
             intent.putExtra("userID", userID);
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //....
+
         ZegoUIKitPrebuiltCallInvitationConfig callInvitationConfig = new ZegoUIKitPrebuiltCallInvitationConfig();
 //...
         callInvitationConfig.provider = new ZegoUIKitPrebuiltCallConfigProvider() {
