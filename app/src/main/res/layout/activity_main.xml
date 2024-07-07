@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:background="#03A9F4"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/circle_logo"/>
+
+<!--    <ImageView-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:src="@drawable/logo_white"/>-->
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_white"
+        android:text="YoloHealth"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lets's get started"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/user_id_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_corner"
+        android:hint="Enter your name here"
+        android:textColorHint="@color/white"
+        android:paddingHorizontal="15dp"
+        android:textColor="#fff"
+        android:textFontWeight="@integer/material_motion_duration_medium_1" />
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#CDDC39"
+        android:text="START CALL"
+        android:textColorLink="#FFFFFF"
+        android:textSize="14sp" />
+    </LinearLayout>
